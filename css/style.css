@@ -18,6 +18,9 @@ body {
     text-decoration: none;
     color: #0B0F5E; }
 
+.full-browser-height {
+  min-height: 50vh; }
+
 #header {
   background: #0B0F5E;
   /* For browsers that do not support gradients */
@@ -29,8 +32,8 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(130deg, #0B0F5E, #127F64);
   color: white;
-  padding: 10% 20%;
-  position: absolute; }
+  padding: 10% 20% 15%;
+  position: relative; }
   #header p {
     font-size: 18px; }
   #header a {
@@ -40,8 +43,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-image: url("../img/sharon.jpg");
-    height: 50vh;
+    background-image: url("../img/sharon.png");
+    height: 100vh;
     max-width: 484px;
     display: block;
     position: absolute;
@@ -54,15 +57,61 @@ body {
 .rotate-right {
   transform: rotate(2deg); }
 
-.full-browser-height {
-  min-height: 50vh; }
-
 #portfolio {
+  clear: both;
   background-color: white;
   margin-top: -40px;
   position: relative;
-  width: 101%; }
+  width: 110%; }
   #portfolio #portfolio-inside {
+    padding: 10% 20% 15%; }
+    #portfolio #portfolio-inside h1 {
+      margin-bottom: 50px; }
+    #portfolio #portfolio-inside p {
+      font-size: 18px;
+      float: left;
+      margin: 5px 40px 10px 0; }
+  #portfolio .clear {
+    clear: both; }
+  #portfolio .my-work {
+    width: 250px;
+    float: left;
+    margin: 25px 30px 15px 0; }
+
+#my-skills {
+  clear: both;
+  background: #0B0F5E;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #0B0F5E, #127F64);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0B0F5E, #127F64);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0B0F5E, #127F64);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(130deg, #0B0F5E, #127F64);
+  color: white;
+  margin-top: -40px;
+  position: relative;
+  width: 110%;
+  left: -5%; }
+  #my-skills #my-skills-inside {
+    padding: 10% 20% 15% 25%; }
+    #my-skills #my-skills-inside h1 {
+      margin-bottom: 50px; }
+    #my-skills #my-skills-inside p {
+      font-size: 18px; }
+
+#contact {
+  clear: both;
+  background-color: white;
+  margin-top: -80px;
+  position: relative;
+  width: 110%; }
+  #contact #contact-inside {
     padding: 10% 20%; }
+    #contact #contact-inside h1 {
+      margin-bottom: 50px; }
+    #contact #contact-inside p {
+      font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,6 +32,10 @@ body {
 	}
 }
 
+.full-browser-height {
+	min-height: 50vh;
+}
+
 #header {
 	background: $darkblue; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left top, $darkblue, $greenblue); /* For Safari 5.1 to 6.0 */
@@ -39,8 +43,8 @@ body {
 	background: -moz-linear-gradient(bottom right, $darkblue, $greenblue); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(130deg, $darkblue, $greenblue);
 	color:white;
-	padding:10% 20%;
-	position:absolute;
+	padding:10% 20% 15%;
+	position:relative;
 
 	p {
 		font-size: 18px;
@@ -54,8 +58,8 @@ body {
 		background-size: contain;
 		background-repeat:no-repeat;
 		background-position: bottom;
-		background-image: url("../img/sharon.jpg");
-		height:50vh;
+		background-image: url("../img/sharon.png");
+		height:100vh;
 		max-width:484px;
 		display:block;
 		position:absolute;
@@ -71,18 +75,77 @@ body {
 .rotate-right {
 	transform: rotate(2deg);
 }
-.full-browser-height {
-	min-height: 50vh;
-}
 
 #portfolio {
+	clear:both;
 	background-color: white;
 	margin-top:-40px;
 	position: relative;
-	width:101%;
+	width:110%;
 
 	#portfolio-inside {
-		padding: 10% 20%;
+		padding: 10% 20% 15%;
+
+		h1 {
+			margin-bottom:50px;
+		}
+		p {
+			font-size: 18px;
+			float:left;
+			margin:5px 40px 10px 0;
+		}
+	}
+
+	.clear {
+		clear:both;
+	}
+	.my-work {
+		width:250px;
+		float:left;
+		margin:25px 30px 15px 0;
 	}
 }
 
+#my-skills {
+	clear:both;
+	background: $darkblue; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, $darkblue, $greenblue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, $darkblue, $greenblue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, $darkblue, $greenblue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(130deg, $darkblue, $greenblue);
+	color:white;
+	margin-top:-40px;
+	position: relative;
+	width:110%;
+	left:-5%;
+
+	#my-skills-inside {
+		padding: 10% 20% 15% 25%;
+
+		h1 {
+			margin-bottom:50px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+#contact {
+	clear:both;
+	background-color: white;
+	margin-top:-80px;
+	position: relative;
+	width:110%;
+
+	#contact-inside {
+		padding: 10% 20%;
+
+		h1 {
+			margin-bottom:50px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
