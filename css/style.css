@@ -57,6 +57,10 @@ body {
 .rotate-right {
   transform: rotate(2deg); }
 
+.clear {
+  clear: both;
+  margin-top: 20px; }
+
 #portfolio {
   clear: both;
   background-color: white;
@@ -71,14 +75,63 @@ body {
       font-size: 18px;
       float: left;
       margin: 5px 40px 10px 0; }
-  #portfolio .clear {
-    clear: both; }
   #portfolio .my-work {
     width: 250px;
     float: left;
-    margin: 25px 30px 15px 0; }
+    margin: 5px 30px 15px 0; }
 
 #my-skills {
+  clear: both;
+  background: #127F64;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #127F64, #0B0F5E);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #127F64, #0B0F5E);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #127F64, #0B0F5E);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(130deg, #127F64, #0B0F5E);
+  color: white;
+  margin-top: -40px;
+  position: relative;
+  width: 110%;
+  left: -5%; }
+  #my-skills #my-skills-inside {
+    padding: 10% 20% 15% 25%; }
+    #my-skills #my-skills-inside h1 {
+      margin-bottom: 50px; }
+    #my-skills #my-skills-inside ul {
+      padding-left: 0;
+      margin-left: 0; }
+    #my-skills #my-skills-inside li {
+      list-style-type: none;
+      font-size: 21px; }
+    #my-skills #my-skills-inside .small-text {
+      font-size: 14px;
+      margin: 0; }
+
+#experience {
+  clear: both;
+  background-color: white;
+  margin-top: -80px;
+  position: relative;
+  width: 110%; }
+  #experience #experience-inside {
+    padding: 10% 20% 15%; }
+    #experience #experience-inside h1 {
+      margin-bottom: 50px; }
+    #experience #experience-inside ul {
+      padding-left: 0;
+      margin-left: 0; }
+    #experience #experience-inside li {
+      color: black;
+      list-style-type: none;
+      font-size: 21px; }
+    #experience #experience-inside .small-text {
+      font-size: 14px;
+      margin: 0; }
+
+#contact {
   clear: both;
   background: #0B0F5E;
   /* For browsers that do not support gradients */
@@ -90,28 +143,16 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(130deg, #0B0F5E, #127F64);
   color: white;
-  margin-top: -40px;
-  position: relative;
-  width: 110%;
-  left: -5%; }
-  #my-skills #my-skills-inside {
-    padding: 10% 20% 15% 25%; }
-    #my-skills #my-skills-inside h1 {
-      margin-bottom: 50px; }
-    #my-skills #my-skills-inside p {
-      font-size: 18px; }
-
-#contact {
-  clear: both;
-  background-color: white;
-  margin-top: -80px;
+  margin: -80px auto 80px -5%;
   position: relative;
   width: 110%; }
   #contact #contact-inside {
-    padding: 10% 20%; }
+    padding: 10% 20% 10% 25%; }
     #contact #contact-inside h1 {
       margin-bottom: 50px; }
     #contact #contact-inside p {
-      font-size: 18px; }
+      font-size: 24px; }
+    #contact #contact-inside a {
+      color: #FFDA48; }
 
 /*# sourceMappingURL=style.css.map */

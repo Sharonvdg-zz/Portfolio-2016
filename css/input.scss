@@ -76,6 +76,11 @@ body {
 	transform: rotate(2deg);
 }
 
+.clear {
+	clear:both;
+	margin-top:20px;
+}
+
 #portfolio {
 	clear:both;
 	background-color: white;
@@ -96,23 +101,20 @@ body {
 		}
 	}
 
-	.clear {
-		clear:both;
-	}
 	.my-work {
 		width:250px;
 		float:left;
-		margin:25px 30px 15px 0;
+		margin:5px 30px 15px 0;
 	}
 }
 
 #my-skills {
 	clear:both;
-	background: $darkblue; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left top, $darkblue, $greenblue); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, $darkblue, $greenblue); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, $darkblue, $greenblue); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(130deg, $darkblue, $greenblue);
+	background: $greenblue; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, $greenblue, $darkblue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, $greenblue, $darkblue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, $greenblue, $darkblue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(130deg, $greenblue, $darkblue);
 	color:white;
 	margin-top:-40px;
 	position: relative;
@@ -125,27 +127,73 @@ body {
 		h1 {
 			margin-bottom:50px;
 		}
-		p {
-			font-size: 18px;
+		ul {
+			padding-left:0;
+			margin-left:0;
+		}
+		li {
+			list-style-type: none;
+			font-size: 21px;
+		}
+		.small-text {
+			font-size: 14px;
+			margin:0;
 		}
 	}
 }
 
-#contact {
+#experience {
 	clear:both;
 	background-color: white;
 	margin-top:-80px;
 	position: relative;
 	width:110%;
 
+	#experience-inside {
+		padding: 10% 20% 15%;
+
+		h1 {
+			margin-bottom:50px;
+		}
+		ul {
+			padding-left:0;
+			margin-left:0;
+		}
+		li {
+			color:black;
+			list-style-type: none;
+			font-size: 21px;
+		}
+		.small-text {
+			font-size: 14px;
+			margin:0;
+		}
+	}
+}
+
+#contact {
+	clear:both;
+	background: $darkblue; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, $darkblue, $greenblue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, $darkblue, $greenblue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, $darkblue, $greenblue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(130deg, $darkblue, $greenblue);
+	color:white;
+	margin:-80px auto 80px -5%;
+	position: relative;
+	width:110%;
+
 	#contact-inside {
-		padding: 10% 20%;
+		padding: 10% 20% 10% 25%;
 
 		h1 {
 			margin-bottom:50px;
 		}
 		p {
-			font-size: 18px;
+			font-size: 24px;
+		}
+		a {
+			color: $yellow;
 		}
 	}
 }
