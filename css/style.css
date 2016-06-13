@@ -1,0 +1,68 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Medium.ttf);
+  font-weight: bold; }
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Regular.ttf); }
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Light.ttf);
+  font-weight: lighter; }
+body {
+  font-family: roboto, sans-serif;
+  font-size: '18px'; }
+  body h1 {
+    font-size: 48px; }
+  body a {
+    text-decoration: none;
+    color: #0B0F5E; }
+
+#header {
+  background: #0B0F5E;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #0B0F5E, #127F64);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0B0F5E, #127F64);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0B0F5E, #127F64);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(130deg, #0B0F5E, #127F64);
+  color: white;
+  padding: 10% 20%;
+  position: absolute; }
+  #header p {
+    font-size: 18px; }
+  #header a {
+    color: #FFDA48; }
+  #header .profile-pic {
+    width: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("../img/sharon.jpg");
+    height: 50vh;
+    max-width: 484px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 60%; }
+
+.rotate-left {
+  transform: rotate(-2deg); }
+
+.rotate-right {
+  transform: rotate(2deg); }
+
+.full-browser-height {
+  min-height: 50vh; }
+
+#portfolio {
+  background-color: white;
+  margin-top: -40px;
+  position: relative;
+  width: 101%; }
+  #portfolio #portfolio-inside {
+    padding: 10% 20%; }
+
+/*# sourceMappingURL=style.css.map */
