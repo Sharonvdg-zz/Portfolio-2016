@@ -34,9 +34,9 @@ body {
   background: linear-gradient(130deg, #335b76, #a34427);
   color: white;
   position: relative;
-  width: 110%;
+  width: 116%;
   padding: 10% 20% 15%;
-  left: -2.5%; }
+  left: -5.5%; }
   #header p {
     font-size: 18px; }
   #header a {
@@ -79,8 +79,8 @@ body {
   background-color: white;
   margin-top: -40px;
   position: relative;
-  width: 110%;
-  left: -5%; }
+  width: 116%;
+  left: -8%; }
   #portfolio #portfolio-inside {
     padding: 5% 20% 10%; }
     #portfolio #portfolio-inside h1 {
@@ -128,8 +128,8 @@ body {
   color: white;
   margin-top: -40px;
   position: relative;
-  width: 110%;
-  left: -5%; }
+  width: 116%;
+  left: -8%; }
   #my-skills #my-skills-inside {
     padding: 5% 20% 10%; }
     #my-skills #my-skills-inside h1 {
@@ -149,8 +149,8 @@ body {
   background-color: white;
   margin-top: -80px;
   position: relative;
-  width: 110%;
-  left: -5%; }
+  width: 116%;
+  left: -8%; }
   #experience #experience-inside {
     padding: 5% 20% 10%; }
     #experience #experience-inside h1 {
@@ -167,17 +167,20 @@ body {
       margin: 0; }
 
 @media only screen and (max-width: 768px) {
+  #header {
+    padding-bottom: 20%; }
+
   #portfolio {
     padding-bottom: 5%; }
 
   #my-skills {
-    padding-bottom: 15%; }
+    padding-bottom: 20%; }
 
   #experience {
-    padding-bottom: 10%; }
+    padding-bottom: 20%; }
 
   #contact {
-    padding-bottom: 5%; } }
+    padding-bottom: 15%; } }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   #my-skills {
     padding-bottom: 10%; } }
@@ -212,12 +215,15 @@ body {
   margin: -50px 0 0;
   position: relative;
   width: 110%;
-  text-align: right;
   left: -5%; }
   #footer .row {
     padding: 2% 20% 2%; }
     #footer .row .pages {
       text-align: left; }
+    #footer .row .pages2 {
+      text-align: right;
+      float: right;
+      width: 100%; }
     #footer .row a {
       color: black;
       font-size: 16px; }
@@ -232,14 +238,11 @@ body {
     text-align: left;
     min-height: 70px; } }
 #oneitem {
-  width: 80%;
-  height: 80%;
-  padding: 5%;
-  font-size: 18px; }
-  #oneitem h1 {
-    margin-bottom: 50px; }
+  font-size: 18px;
+  text-align: left; }
   #oneitem h3 {
-    margin-top: 50px; }
+    margin-top: 35px;
+    color: #0B0F5E; }
   #oneitem a {
     width: 200px;
     border: #127F64 2px solid;
@@ -263,19 +266,12 @@ body {
     width: 100%;
     border: #127F64 2px solid;
     border-radius: 15px;
-    margin: 5px auto 10px; }
+    margin: 10px auto 20px; }
   #oneitem p {
-    margin: 15px auto 0; }
+    margin: 20px auto 0; }
 
-.overlay {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
-  background-color: rgba(255, 255, 255, 0.15);
-  z-index: 9999;
-  color: black;
-  display: inline-block; }
+@media (min-width: 768px) {
+  #userInfo .modal-dialog {
+    width: 800px !important; } }
 
 /*# sourceMappingURL=style.css.map */

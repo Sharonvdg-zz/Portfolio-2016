@@ -1,10 +1,14 @@
 $ ( document ).ready( function () {
-	console.log('dom is ready')
+	// console.log('dom is ready')
 
-	$ ( '#portfolio-item' ).click(function (){
+	// $ ( '#portfolio-item' ).click(function (){
 		
-		 $('.overlay').load();
+	// 	 $('.overlay').load();
 
-	})
+	// })
+
+// $(function(){
+//       $("#includedContent").load("portfolio-item.html"); 
+//     });
 
 })

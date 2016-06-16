@@ -9,12 +9,15 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Portfolio Sharon van der Geest">
 	<meta name="author" content="Sharon van der Geest">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="portfolio-items.html" rel="prefetch">
 </head>
 <body>
+
 	<section id="header" class="full-browser-height slide">
 		<div class="profile-pic">
 		</div>
@@ -29,6 +32,8 @@
 		</div>
 	</section>
 
+
+
 	<section id="portfolio" class="rotate-left">
 		<div id="container" class="rotate-right">
 			<div id="portfolio-inside" class='row'>
@@ -39,49 +44,52 @@
 					<a href=''><p><b>Back-end</b></p></a>
 					<a href=''><p><b>Creative</b></p></a> -->
 					<div class='clear'>
-						<a href='portfolio/blogapp.html' id="portfolio-item"><img class='thumbnail my-work' src='img/blogapp-sq.jpg' /></a>
-						<a href='portfolio/userinfo.html'><img class='thumbnail my-work' src='img/userinfo-sq.jpg' /></a>
-						<a href='portfolio/bloesem.html'><img class='thumbnail my-work' src='img/bloesem-sq.jpg' /></a>
+						<!-- Trigger the modal with a button -->
+						<div  data-toggle="modal" data-target="#blogApp"><img class='thumbnail my-work' src='img/blogapp-sq.jpg' title="Blog application" /></div>
+
+						<div  data-toggle="modal" data-target="#userInfo"><img class='thumbnail my-work' src='img/userinfo-sq.jpg' title="User info application" /></div>
+						
+						<div  data-toggle="modal" data-target="#bloesem"><img class='thumbnail my-work' src='img/bloesem-sq.jpg' title="Bloesem website" /></div>
 					</div>
 				</div>
 				<div class='clear'>
-				<div class='col-sm-offset-10 col-sm-2'>
-					<a href='https://github.com/Sharonvdg' target='blank'><div class='button'>See more on Github</div></a>
+					<div class='col-sm-offset-10 col-sm-2'>
+						<a href='https://github.com/Sharonvdg' target='blank'><div class='button' title="Visit Github profile">See more on Github</div></a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 
-	<section id='my-skills' class='rotate-right'>
-		<div id='container' class='rotate-left'>
-			<div id='my-skills-inside' class='row'>
-				<div class='col-md-12'>
-					<h1><b>My skills</b></h1>
-				</div>
-				<div class='col-sm-4'>
-					<h3><b>Writing code</b></h3>
-					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>SASS</li>
-						<li>JavaScript</li>
-						<li>jQuery</li>
-						<li>Node.js</li>
-						<li>Module Building</li>
-						<li>APIs</li>
-						<li>Bootstrap</li>
-						<li>Jade</li>
-						<li>SQL</li>
-					</ul>
-				</div>
-				<div class='col-sm-4'>
-					<h3><b>Programming tools</b></h3>
-					<ul>
-						<li>Sublime Text<span class='small-text'></span></li>
-						<li>Git<span class='small-text'></span></li>
-						<li>Github<span class='small-text'></span></li>
-					</ul>
+		<section id='my-skills' class='rotate-right'>
+			<div id='container' class='rotate-left'>
+				<div id='my-skills-inside' class='row'>
+					<div class='col-md-12'>
+						<h1><b>My skills</b></h1>
+					</div>
+					<div class='col-sm-4'>
+						<h3><b>Writing code</b></h3>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>SASS</li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+							<li>Node.js</li>
+							<li>Module Building</li>
+							<li>APIs</li>
+							<li>Bootstrap</li>
+							<li>Jade</li>
+							<li>SQL</li>
+						</ul>
+					</div>
+					<div class='col-sm-4'>
+						<h3><b>Programming tools</b></h3>
+						<ul>
+							<li>Sublime Text<span class='small-text'></span></li>
+							<li>Git<span class='small-text'></span></li>
+							<li>Github<span class='small-text'></span></li>
+						</ul>
 				<!-- LESS
 				React.js -->
 				<h3><b>Design</b></h3>
@@ -136,8 +144,8 @@
 					</ul>
 				</div>
 				<div class='col-md-offset-10 col-md-2'>
-				<a href='https://www.linkedin.com/in/svdgeest' target='blank'><div class='button'>See more on LinkedIn</div></a></div>
-			</div>
+					<a href='https://www.linkedin.com/in/svdgeest' target='blank'><div class='button' title="Visit LinkedIn profile">See more on LinkedIn</div></a></div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -148,39 +156,235 @@
 				<div class='col-md-6'>
 					<h1><b>Get in touch</b></h1>
 					<p>If you would like to get in touch with me, please check out my <a href='https://nl.linkedin.com/in/svdgeest
-						' target='blank'><b>LinkedIn</b></a>, or send me an <a href='mailto:s.c.m.v.d.geest@gmail.com'><b>email</b></a>.</p>
+						' target='blank'  title="Visit LinkedIn profile"><b>LinkedIn</b></a>, or send me an <a href='mailto:s.c.m.v.d.geest@gmail.com' title="s.c.m.v.d.geest@gmail.com"><b>email</b></a>.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section id='footer' >
-		<div id='container' class='row'>
-			<div class='col-xs-6 col-sm-3 col-lg-2 pages'>
-				<a href='#header'>About me</a><br>
-				<a href='#portfolio'>My work</a><br>
-				<a href='#my-skills'>My skills</a><br>
-			</div>
-			<div class='col-xs-6 col-sm-3 col-lg-2 pages'>
-				<a href='#experience'>Experience</a><br>
-				<a href='#contact'>Contact</a><br>
-			</div>
-			<div class ='col-xs-6 col-sm-3 col-lg-offset-4 col-lg-2'>
-				<p><b>Find out more</p></b>
-				<a href='https://github.com/Sharonvdg' target='blank'>Github</a><br>
-				<a href='https://nl.linkedin.com/in/svdgeest
-' target='blank'>LinkedIn</a>
-			</div>
-			<div class ='col-xs-6 col-sm-3 col-lg-2'>
-				<p><b>Contact</p></b>
-				<a href='mailto:s.c.m.v.d.geest@gmail.com'>Email</a><br>
-				<a href='https://nl.linkedin.com/in/svdgeest
-'>LinkedIn</a>
-			</div>
+		<section id='footer' >
+			<div id='container' class='row'>
+				<div class='col-xs-6 col-sm-3 col-lg-2 pages'>
+					<a href='#header'>About me</a><br>
+					<a href='#portfolio'>My work</a><br>
+					<a href='#my-skills'>My skills</a><br>
+				</div>
+				<div class='col-xs-6 col-sm-3 col-lg-2 pages'>
+					<a href='#experience'>Experience</a><br>
+					<a href='#contact'>Contact</a><br>
+				</div>
+				<div class ='col-xs-6 col-sm-3 col-lg-offset-4 col-lg-2'>
+					<p class='pages2'><b>Find out more</p></b>
+					<span class='pages2'><a href='https://github.com/Sharonvdg' target='blank' title="Visit Github profile">Github</a></span><br>
+					<span class='pages2'><a href='https://nl.linkedin.com/in/svdgeest
+						' target='blank' title="Visit LinkedIn profile">LinkedIn</a></span>
+					</div>
+					<div class ='col-xs-6 col-sm-3 col-lg-2'>
+						<p class='pages2'><b>Contact</p></b>
+						<span class='pages2'><a href='mailto:s.c.m.v.d.geest@gmail.com'>Email</a></span><br>
+						<span class='pages2'><a href='https://nl.linkedin.com/in/svdgeest
+							' title="Visit LinkedIn profile">LinkedIn</a></span>
+						</div>
 
 
-		<script src="js/jquery-2.2.4.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
-	</html>
+						<script src="js/jquery-2.2.4.js"></script>
+						<script src="js/script.js"></script>
+						<script src="js/bootstrap.min.js"></script>
+					</body>
+					</html>
+
+
+
+
+
+
+
+
+					<!-- !!!!!!! MODULES WITH SEPERATE PORFOLIO ITEMS -->
+
+					<!-- !!! First modal, BlogApp !!! -->
+
+					<!-- Modal -->
+					<div id="blogApp" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h2 class="modal-title"><b>Blog Application</b></h2>
+								</div>
+								<div class="modal-body">
+
+									<section id="oneitem">
+										<div id="container">
+											<div class="row">
+												<div class="col-md-12">
+													<a href="https://github.com/nycda-geeks/Sharon-Blog-application" target="blank">View Github repo</a>
+												</div>
+												<div class="col-md-5">
+													<h3><b>Skills involved </b></h3>
+													<ul>
+														<li>Node.js</li>
+														<li>Jade</li>
+														<li>JavaScript</li>
+														<li>bCrypt</li>
+														<li>PostgreSQL</li>
+														<li>Sequelize</li>
+														<li>SASS</li>
+													</ul>
+												</div>
+												<div class="col-md-7">
+													<h3><b>Goal</b></h3>
+													<p>Making a blog application where users can register, login and logout. Every user can post an article on its own profile page, view a list of posts of everyone on the blog and view a specific post entirely including the comments. Every user can also comment on each post.</p>
+												</div>
+												<div class=" col-md-12">
+													<h3><b>Website pages</b></h3>
+													<p>Home page, choose from three menu options.</p>
+													<img src="/img/blogapp-1.jpg"/>
+													<p>Login an existing user.</p>
+													<img src="/img/blogapp-2.jpg"/>
+													<p>Register a new user.</p>
+													<img src="/img/blogapp-3.jpg"/>
+													<p>When logged in, the page is redirected to your own profile page. Here you can add new posts and view all posts you made. This user didn't post anything yet.</p>
+													<img src="/img/blogapp-4.jpg"/>
+													<p>If you checkout the blog, you'll see an overview of the posts of every user.</p>
+													<img src="/img/blogapp-5.jpg"/>
+													<p>When you click on a post, you'll see this post including its comments, and you can leave a comment yourself. </p>
+													<img src="/img/blogapp-6.jpg"/>
+													<p>When you're not logged in, you can only view the post and comments but not place a comment yourself.</p>
+													<img src="/img/blogapp-7.jpg"/>
+												</div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+					<!-- !!! Second modal, userInfo App !!! -->
+
+					<!-- Modal -->
+					<div id="userInfo" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h2 class="modal-title"><b>User Info App</b></h2>
+								</div>
+								<div class="modal-body">
+
+									<section id="oneitem" >
+										<div id="container">
+											<div class="row">
+												<div class="col-md-12">
+													<a href="https://github.com/nycda-geeks/Sharon-user-info-app" target="blank">View Github repo</a>
+												</div>
+												<div class="col-md-5">
+													<h3><b>Skills involved </b></h3>
+													<ul>
+														<li>Node.js</li>
+														<li>Jade</li>
+														<li>jQuery</li>
+														<li>AJAX</li>
+														<li>Module building</li>
+														<li>CSS3</li>
+													</ul>
+												</div>
+												<div class="col-md-7">
+													<h3><b>Goal</b></h3>
+													<p>The goal of this application is to show users from the json file, search for users and create new users.</p>
+												</div>
+												<div class=" col-md-12">
+													<h3><b>Website pages</b></h3>
+													<p>Home page, choose from three menu options.</p>
+													<img src="/img/userinfo-1.jpg"/>
+													<p>Login an existing user.</p>
+													<img src="/img/userinfo-2.jpg"/>
+													<p>Register a new user.</p>
+													<img src="/img/userinfo-3.jpg"/>
+													<p>When logged in, the page is redirected to your own profile page. Here you can add new posts and view all posts you made. This user didn't post anything yet.</p>
+													<img src="/img/userinfo-4.jpg"/>
+												</div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+					<!-- !!! Third modal, Bloesem !!! -->
+
+					<!-- Modal -->
+					<div id="bloesem" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h2 class="modal-title"><b>Bloesem</b></h2>
+								</div>
+								<div class="modal-body">
+
+									<section id="oneitem">
+										<div id="container">
+											<div class="row">
+												<div class="col-md-12">
+													<a href='http://bloesemvooru.nl/' target='blank'>View website online</a>
+												</div>
+												<div class="col-md-5">
+													<h3><b>Skills involved </b></h3>
+													<ul>
+														<li>HTML5</li>
+														<li>CSS3</li>
+														<li>Bootstrap</li>
+													</ul>
+												</div>
+												<div class="col-md-7">
+													<h3><b>Goal</b></h3>
+													<p>Informative website for Bloesem. Bloesem wants to keep company and help people with basic tasks, such as doing groceries, visiting friends or going to the hospital. The target group is mainly elderly, but Bloesem can also be hired by people who are too busy to achieve all basic tasks at home.</p>
+												</div>
+												<div class="col-md-12">
+													<h3><b>Website pages</b></h3>
+													<p>Explanation about the company.</p>
+													<img src="/img/bloesem-home.jpg"/>
+													<p>Selection of activities that the customer can do together with Bloesem.</p>
+													<img src="/img/bloesem-activiteiten-v1.jpg"/>
+													<p>Costs of the service Bloesem delivers.</p>
+													<img src="/img/bloesem-tarieven-v1.jpg"/>
+													<p>Contact page.</p>
+													<img src="/img/bloesem-contact-v1.jpg"/>
+												</div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
