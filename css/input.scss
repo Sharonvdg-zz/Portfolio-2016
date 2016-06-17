@@ -127,9 +127,11 @@ body {
 		width:250px;
 		float:left;
 		margin:5px 30px 15px 0;
+		cursor:pointer;
 	}
 	.my-work:hover {
 		transform:scale(1.01,1.01);
+		border: 1px solid rgba(18, 127, 100, .5);
 	}
 
 }
@@ -144,11 +146,12 @@ body {
 	display:block;
 	text-align: center;
 	text-decoration: none;
+	cursor:pointer;
 }
 .button:hover {
 	border: black 2px solid;
 	color: black;
-	transform: scale(1.1,1.1);
+	transform: scale(1.01,1.01);
 	text-decoration:none;
 }
 

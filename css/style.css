@@ -92,9 +92,11 @@ body {
   #portfolio .my-work {
     width: 250px;
     float: left;
-    margin: 5px 30px 15px 0; }
+    margin: 5px 30px 15px 0;
+    cursor: pointer; }
   #portfolio .my-work:hover {
-    transform: scale(1.01, 1.01); }
+    transform: scale(1.01, 1.01);
+    border: 1px solid rgba(18, 127, 100, 0.5); }
 
 .button {
   width: 200px;
@@ -106,12 +108,13 @@ body {
   color: #127F64;
   display: block;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .button:hover {
   border: black 2px solid;
   color: black;
-  transform: scale(1.1, 1.1);
+  transform: scale(1.01, 1.01);
   text-decoration: none; }
 
 #my-skills {
